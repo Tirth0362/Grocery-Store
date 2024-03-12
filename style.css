@@ -457,7 +457,9 @@ section{
 .Categories .box-container
 {
     border: 0px solid;
-    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
 }
 
 .Categories .box-container .box
@@ -548,6 +550,45 @@ section{
     padding: .5rem 0;
 
 }
+
+/* blogs */
+
+.Blogs .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
+}
+.Blogs .box-container .box
+{
+    border: 0px solid red;
+    box-sizing: border-box;
+    height: 450px;
+    width: 350px;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+.Blogs .box:hover
+{
+    box-shadow: 1px 1px 10px 4px var(--green);   
+}
+
+.Blogs .box img
+{
+    height: 20rem;
+
+}
+
+
+
+
+
+
  
 
 
