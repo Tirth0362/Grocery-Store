@@ -6,7 +6,7 @@
     --black: #130f40;
     --light-color: #666;
     --box-shadow: 0 .1rem 1.5rem rgba(0,0,0,.1);
-    --border: 2rem solid rgba(0,0,0.1);
+    --border: .2rem solid rgba(0,0,0.1);
     --outline: .1rem solid rgba(0,0,0.1);
 }
 
@@ -524,6 +524,7 @@ section{
 {
     box-shadow: 1px 1px 10px 4px var(--green);   
 }
+
 .review-slide .box img
 {
     height: 15rem;
@@ -562,16 +563,11 @@ section{
 }
 .Blogs .box-container .box
 {
-    border: 0px solid red;
-    box-sizing: border-box;
-    height: 450px;
-    width: 350px;
-    text-align: center;
-    padding: 3rem 2rem;
-    outline-offset: -1rem;
-    outline: var(--outline);
-    box-shadow: var(--box-shadow);
+   
+    overflow: hidden;
     background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
 }
 .Blogs .box:hover
 {
@@ -580,12 +576,56 @@ section{
 
 .Blogs .box img
 {
-    height: 20rem;
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Blogs .box-container .box .content
+{
+    padding: 2rem;
+}
+.Blogs .box-container .box .content .icon 
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 1.5rem;
+   margin-bottom: 1rem;
+   border-bottom: var(--border);
+}
+.Blogs .box-container .box .content .icon a 
+{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.Blogs .box-container .box .content .icon a:hover
+{
+    color: var(--black);
+}
+.Blogs .box-container .box .content .icon a i
+{
+    color: green;
+    padding-right: .5rem;
+}
+
+.Blogs .box-container .box .content h1
+{
+    line-height: 1.8;
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
 
 }
 
+.Blogs .box-container .box .content p
+{
+    line-height: 1.8;
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: .5rem 0;
 
-
+}
 
 
 
